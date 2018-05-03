@@ -1,5 +1,5 @@
-
-	<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.1.1/dist/aframe-physics-system.min.js"></script>
 <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
 <script src="https://github.com/ngokevin/aframe-physics-components/blob/master/dist/aframe-physics-components.min.js"></script>
 
@@ -13,9 +13,9 @@
  
   
  
-
+</a-scene>
 		<!--wall left-->
-		<a-box position="-12.5 3 -1.5" scale="12 6 0.1" color="#9b9b9b" rotation="0 -90 0" material="" geometry=""></a-box>
+		<a-box static-body position="-12.5 3 -1.5" scale="12 6 0.1" color="#9b9b9b" rotation="0 -90 0" material="" geometry=""></a-box>
 		<!--wall right-->
 		<a-box position="5 3 1.5" scale="6 6 0.1" color="#9b9b9b" rotation="0 -90 0" material="" geometry=""></a-box>
 		<!--wall right-->
@@ -55,7 +55,7 @@
 		<!--grass-->
 		<a-plane color="#33cc33" position="7 -1 -1.15" rotation="-90 0 0" width="60" height="60" repeat="10 10"></a-plane>
 		<!--light-->
-		<a-light type="ambient"  intensity=".5" light=""></a-light>
+		<a-light type="ambient"  intensity=".3" light=""></a-light>
 		<!--light-->
 		<a-light type="point" position="-8 2.85 1.7" intensity="1" decay="3.09" penumbra=" 1" color="#fff" castShadow="true" shadowCameraVisible="true">
 		</a-light>
