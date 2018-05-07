@@ -2,8 +2,7 @@
 <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.1.1/dist/aframe-physics-system.min.js"></script>
 <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
 <script src="https://github.com/ngokevin/aframe-physics-components/blob/master/dist/aframe-physics-components.min.js"></script>
-<script>
-</script>
+<script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.1.2/dist/aframe-physics-system.min.js"></script>
 	<a-scene fog="type: linear; color: #AAA">
 		<a-assets>
 			<img id="cory" src="http://i0.kym-cdn.com/entries/icons/original/000/017/022/ngbbs52c3dbce540d4.jpg" >
@@ -16,7 +15,7 @@
 		</a-assets>
 		
 		<!--camera-->
-		<a-entity  position="0 1.6 -6" rotation="0 180.00 0"   >
+		<a-entity  position="0 1.6 -6" rotation="0 180.00 0" dynamic-body="shape: box; mass: 2" position="3 0 3" constraint="target: #floor;distance:10;" type="distance"  >
 			<a-camera look-controls wasd-controls pointerLockEnabled="true"></a-camera >
 		</a-entity>
 		
