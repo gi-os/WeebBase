@@ -16,9 +16,10 @@
 		</a-assets>
 		
 		<!--camera-->
-		<a-entity  position="0 1.6 -6" rotation="0 180.00 0" type="distance"  >
-			<a-camera look-controls wasd-controls ></a-camera >
-		</a-entity>
+		<a-entity camera="userHeight: 1.6"
+                universal-controls
+                kinematic-body>
+     		</a-entity>
 		
 		<!--ipad-->
 		<a-box src="#book1" position="0.693 0.95 -3.698" scale="0.5 0.7 0.1" color="30bdff" material="" geometry="" rotation="90 75 0"></a-box>
@@ -44,27 +45,54 @@
 		<a-box  position="5 1 -3" scale="3 0.1 0.3" color="#4A2E11" rotation="0 90 0" material="" geometry=""></a-box>
 		<!--window top-->
 		<a-box position="5 3 -3" scale="3 0.1 0.3" rotation="0 90 0" material="color:#4A2E11" geometry=""></a-box>
-		<!--wall left-->
-		<a-box src="#wall" static-body position="-12.5 3 -1.5" scale="12 6 0.1" color="#e57248" rotation="0 -90 0" material="" geometry="" repeat="3 1.5"></a-box>
+				<!--wall left-->
+		<a-box static-body src="#wall" static-body position="-12.5 3 -1.5" scale="12 6 0.1" color="#e57248" rotation="0 -90 0" material="" geometry="" repeat="3 1.5"></a-box>
 		<!--wall right-->
-		<a-box src="#wall" position="5 3 1.5" scale="6 6 0.1" color="#e57248" rotation="0 -90 0" material="" geometry="" repeat="1.5 1.5"></a-box>
+		<a-box static-body src="#wall" position="5 3 1.5" scale="6 6 0.1" color="#e57248" rotation="0 -90 0" material="" geometry="" repeat="1.5 1.5"></a-box>
 		<!--wall right-->
-		<a-box src="#wall" position="5 .5 -3" scale="3 1 0.1" color="#e57248" rotation="0 -90 0" material="" geometry="" repeat=".75 .25"></a-box>
+		<a-box static-body src="#wall" position="5 .5 -3" scale="3 1 0.1" color="#e57248" rotation="0 -90 0" material="" geometry="" repeat=".75 .25"></a-box>
 		<!--wall right-->
-		<a-box src="#wall" position="5 4.5 -3" scale="3 3 0.1" color="#e57248" rotation="0 -90 0" material="" geometry="" repeat=".75 .75"></a-box>
+		<a-box static-body src="#wall" position="5 4.5 -3" scale="3 3 0.1" color="#e57248" rotation="0 -90 0" material="" geometry="" repeat=".75 .75"></a-box>
 		<!--wall right-->
-		<a-box src="#wall" position="5 3 -6" scale="3 6 0.1" color="#e57248" rotation="0 -90 0" material="" geometry="" repeat=".75 1.5"></a-box>
+		<a-box static-body src="#wall" position="5 3 -6" scale="3 6 0.1" color="#e57248" rotation="0 -90 0" material="" geometry="" repeat=".75 1.5"></a-box>
 		<!--wall fwd-->
-		<a-box src="#wall" position="-3.7 3 -7.5" scale="17.5 6 0.1" color="#e57248" material="" geometry="" repeat="4.375 1.5"></a-box>
+		<a-box static-body src="#wall" position="-3.7 3 -7.5" scale="17.5 6 0.1" color="#e57248" material="" geometry="" repeat="4.375 1.5"></a-box>
 		<!--wall back-->
-		<a-box src="#wall" position="-3.7 3 4.5" scale="17.5 6 0.1" color="#e57248" material="" geometry="" repeat="4.375 1.5"></a-box>
+		<a-box static-body src="#wall" position="-3.7 3 4.5" scale="17.5 6 0.1" color="#e57248" material="" geometry="" repeat="4.375 1.5"></a-box>
 		<!--tv center-->
-		<a-box src="https://media.giphy.com/media/QPuumOA0PeTuw/giphy.gif" autoplay="true"position="1 3 4.4" scale="6 3 .1" color="30bdff" shader="gif" material="shader:gif;src:url(https://media.giphy.com/media/QPuumOA0PeTuw/giphy.gif)" geometry=""></a-box>
+		<a-box static-body src="https://media.giphy.com/media/QPuumOA0PeTuw/giphy.gif" autoplay="true"position="1 3 4.4" scale="6 3 .1" color="30bdff" shader="gif" material="shader:gif;src:url(https://media.giphy.com/media/QPuumOA0PeTuw/giphy.gif)" geometry=""></a-box>
 		<!--tv top-->
-		<a-box position="1 4.5 4.4" scale="6 .1 .2" color="#1a0000" material="" geometry=""></a-box>
+		<a-box static-body position="1 4.5 4.4" scale="6 .1 .2" color="#1a0000" material="" geometry=""></a-box>
 		<!--tv bot-->
-		<a-box position="1 1.5 4.4" scale="6 .1 .2" color="#1a0000" material="" geometry=""></a-box>
+		<a-box static-body position="1 1.5 4.4" scale="6 .1 .2" color="#1a0000" material="" geometry=""></a-box>
 		<!--tv left-->
+		<a-box static-body position="4 3 4.4" scale=".1 3 .2" color="#1a0000" material="" geometry=""></a-box>
+		<!--tv right-->
+		<a-box static-body position="-2 3 4.4" scale=".1 3 .2" color="#1a0000" material="" geometry=""></a-box>
+		<!--test-->
+		<a-box static-body src="#cory" position="-4.028 2.876 -7.174" scale="0.5 0.5 0.5" color="30bdff" material="" geometry="" rotation="0 12.000000000000002 0"></a-box>
+		<!--couch bottom-->
+		<a-box static-body src="#couch" position="1 0.2 -6.5" scale="8 0.5 2" color="30bdff" material="" geometry=""></a-box>
+		<!--couch back-->
+		<a-box static-body src="#couch" position="1 1 -7.013009280738309" scale="8 2 0.5" color="30bdff" material="" geometry="" rotation="-20 0 0"></a-box>
+		<!--couch left-->
+		<a-box static-body src="#couch" position="-2.7730185816863213 0.5 -6.4" scale="0.5 1 2" color="30bdff" material="" geometry=""></a-box>
+		<!--couch right-->
+		<a-box static-body src="#couch" position="4.75 0.5 -6.4" scale=".5 1 2" color="30bdff" material="" geometry=""></a-box>
+		<!--sky-->
+		<a-sky src="#sky"  material="fog: false" geometry=""></a-sky>
+		<!--ground-->
+		<a-plane id="floor" static-body src="#floor" roughness=".6" position="-3.5 0 -1.15" material="roughnessMap:#floor; roughnessTextureRepeat:10 10;" rotation="-90 0 0" width="18" height="13" repeat="10 10"></a-plane>
+		<!--roof-->
+		<a-box color="#d7d7d7" src="#roof" position="-3.5 6 -1.15" scale="13 0.00001 18" rotation="0 90 0" repeat="10 10" roughness=".8" emissive="#723924" material="repeat:3.25 4.5;emissive:#000;emissiveIntensity:0" geometry=""></a-box>
+		<!--grass-->
+		<a-plane color="#33cc33" position="11.365 -3.203 -1.15" rotation="-90 0 0" width="60" height="60" repeat="10 10" scale="30 30 3" material="" geometry="primitive:sphere"></a-plane>
+		<!--light-->
+		<!--<a-light type="ambient"  intensity=".3" light=""></a-light>
+		<!--light-->
+		<a-light type="point" position="3.683 1.967 -2.85" intensity="1" decay="3.09" penumbra=" 1" color="#fff" castshadow="true" light="intensity:0.82;distance:60"></a-light>
+		<!--tv light-->
+		<a-light type="point" intensity=".3" light="intensity:2.42; shadowBias:-1.03; decay:1.89;distance:10.25;penumbra:0.77;groundColor:#0d488a;color:#0d488a" position="0.924 2.587 4.151" scale="3.12 1.9 -0.009999999999999787"></a-light>
 		<a-box position="4 3 4.4" scale=".1 3 .2" color="#1a0000" material="" geometry=""></a-box>
 		<!--tv right-->
 		<a-box position="-2 3 4.4" scale=".1 3 .2" color="#1a0000" material="" geometry=""></a-box>
