@@ -33,10 +33,10 @@
 	    </a-entity>
  	    <a-entity>
 			<!--ipad-->
-		<a-box src="#book1" position="0.693 0.95 -3.698" scale="0.5 0.7 0.1" color="30bdff" material="" geometry="" rotation="90 75 0"></a-box>
-		<!--picture-->
-		<a-box src="#picture" position="2.088 0.95 -3.824" scale="0.7 0.5 0.01" color="30bdff" material="" geometry="" rotation="90 29.999999999999996 0"></a-box>
-	   </a-entity>
+			<a-box src="#book1" dynamic-body position="0.693 0.95 -3.698" scale="0.5 0.7 0.1" color="30bdff" material="" geometry="" rotation="90 75 0"></a-box>
+			<!--picture-->
+			<a-box src="#picture" dynamic-body position="2.088 0.95 -3.824" scale="0.7 0.5 0.01" color="30bdff" material="" geometry="" rotation="90 29.999999999999996 0"></a-box>
+		</a-entity>
 		   <a-entity>	
 		  <!--test-->
 		<a-box static-body src="#cory" position="-4.028 2.876 -7.174" scale="0.5 0.5 0.5" color="30bdff" material="" geometry="" rotation="0 12.000000000000002 0"></a-box>
@@ -46,15 +46,14 @@
 		  
 		<a-box recieveshadow="true" src="#floor" repeat="2 1" roughness=".8" position="-5.647008789939673 2.6404619688355906 -7.150326133568118" scale="4 0.1 0.7" color="#ca9785" material="roughness:0.78;roughnessMap:[object HTMLImageElement];roughnessTextureRepeat:2 8" geometry=""></a-box>
 		  </a-entity>
-	      <a-entity>
-		  <!--tv table top-->
-		<a-box recieveshadow="true" src="#floor" repeat="2 1" roughness=".8" position="1 0.8 -3.5" scale="4 0.3 2" color="#ca9785" material="roughness:0.78;roughnessMap:#floor; roughnessTextureRepeat:2 8;" geometry=""></a-box>
+	     <a-entity>
+		<!--tv table top-->
+		<a-box id="tbl"recieveshadow="true" src="#floor" dynamic-body repeat="2 1" roughness=".8" position="1 0.8 -3.5" scale="4 0.3 2" color="#ca9785" material="roughness:0.78;roughnessMap:#floor; roughnessTextureRepeat:2 8;" geometry=""></a-box>
 		<!--tv table left-->
-		<a-box  src="#floor" position="2.856 0.41 -3.5" scale="0.3 1 2" color="#ca9785" material="" geometry=""></a-box>
+		<a-box id="tbllg1"dynamic-body src="#floor" position="2.856 0.41 -3.5" scale="0.3 .5 2" color="#ca9785" constraint="target: #tbl;" material="" geometry=""></a-box>
 		<!--tv table right-->
-		<a-box  src="#floor" position="-0.8457180162352856 0.41 -3.5" scale="0.3 1 2" color="#ca9785" material="" geometry=""></a-box>
-		  </a-entity>
-	      <a-entity>
+		<a-box id="tbllg2"dynamic-body src="#floor" position="-0.8457180162352856 0.41 -3.5" scale="0.3 .5 2" color="#ca9785" constraint="target: #tbl;" material="" geometry=""></a-box>
+	      </a-entity>
 		      <!--window right-->
 		<a-box position="5 2.008 -1.549" scale="0.1 2 0.3" color="#4A2E11" rotation="0 90 0" material="" geometry=""></a-box>
 		<!--window left-->
