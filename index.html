@@ -17,6 +17,7 @@
 	<img id="book1" src="diverg.jpeg" preload="auto" ></img>
 <img id="book2" src="www-robinmalau.jpeg" preload="auto" ></img>
 <img id="picture" src="IMG_2577.JPG" preload="auto" ></img>
+<img id="poster" src="Screen Shot 2018-05-07 at 10.40.45 PM.png" preload="auto" ></img>
 
 		</a-assets>
     <a-scene physics>
@@ -27,8 +28,11 @@
                 kinematic-body
 		position="0 1.6 -6"
 		rotation="0 180.00 0">
-      </a-entity id="bigtable">
-	    <a-entity rotation="0 70 0" position="-5 -.2 -6.14">
+	</a-entity id="poster">  
+	    <a-box src="#poster" position="-4.856 0.7 -0.353" scale="0.3 1.4 0.3" color="#ca9785"></a-box>
+	    </a-entity>
+      </a-entity >
+	    <a-entity id="bigtable" rotation="0 70 0" position="-5 -.2 -6.14">
 	    <a-box recieveshadow="true" src="#floor" repeat="2 1" roughness=".8" position="-7.707 1.3 -1.702" scale="6 0.3 3" color="#ca9785" material="roughness:0.78;roughnessMap:#floor;roughnessTextureRepeat:2 8"></a-box>
 	    <a-box src="#floor" position="-4.856 0.7 -0.353" scale="0.3 1.4 0.3" color="#ca9785"></a-box>
 	    <a-box src="#floor" position="-4.856 0.7 -3.055" scale="0.3 1.4 0.3" color="#ca9785"></a-box>
