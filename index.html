@@ -73,8 +73,7 @@
 		</a-entity>
 	     <a-entity id=tvtable>
 			<!--tv table top-->
-			<a-box id="tbl"recieveshadow="true" src="#floor" dynamic-body="mass:1;" repeat="2 1" roughness=".8" position="1 0.8 -3.5" scale="4 0.3 2" color="#ca9785" material="roughness:0.78;roughnessMap:#floor; roughnessTextureRepeat:2 8;" geometry=""></a-box>
-			
+			<a-box id="tbl"recieveshadow="true" src="#floor" dynamic-body="mass:1;" repeat="2 1" roughness=".8" position="1 0.8 -3.5" scale="4 0.3 2" color="#ca9785" material="roughness:0.78; roughnessMap:#floor; roughnessTextureRepeat:2 8;" geometry=""></a-box>
 			<!--tv table left-->
 			<a-box id="tbllg1"dynamic-body="mass:1;" src="#floor" position="2.856 0.41 -3.5" scale="0.3 .5 2" color="#ca9785" constraint="target: #tbl;" material="" geometry=""></a-box>
 			<!--tv table right-->
@@ -138,8 +137,6 @@
 		<a-box color="#d6d6d6"  position="-3.5 4.8 -1.15" scale="13 0.00001 18" rotation="0 90 0" repeat="10 10" roughness=".8" emissive="#723924" material="repeat:3.25 4.5;emissive:#000;emissiveIntensity:0" geometry=""></a-box>
 		<!--grass-->
 		<a-plane color="#33cc33" position="11.365 -3.203 -1.15" rotation="-90 0 0" width="60" height="60" repeat="10 10" scale="30 30 3" material="" geometry="primitive:sphere"></a-plane>
-		<!--light-->
-		<!--<a-light type="ambient"  intensity=".3" light=""></a-light>
 		<!--light-->
 		<a-light type="point" position="3.683 1.967 -2.85" intensity="1" decay="3.09" penumbra=" 1" color="#fff" castshadow="true" light="intensity:0.82;distance:60"></a-light>
 		<!--tv light-->
