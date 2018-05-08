@@ -34,11 +34,11 @@
 	    <a-entity id="bigtable" rotation="0 70 0" position="-5 -.2 -6.14">
 	    <!--chair front-->
 		      <!--chair legs-->
-		    <a-entity id="chair1full" dynamic-body>
-	    <a-box src="#floor" static-body position="-4.856 0.442 -1.15" scale="0.1 0.9 0.2" color="#806156"></a-box>
-	    <a-box src="#floor" static-body position="-4.03 0.442 -1.15" scale="0.1 0.9 0.2" color="#806156"></a-box>
-	    <a-box src="#floor" static-body position="-4.03 0.442 -1.95" scale="0.1 0.9 0.2" color="#806156"></a-box>
-	    <a-box src="#floor" static-body position="-4.856 0.442 -1.95" scale="0.1 0.9 0.2" color="#806156"></a-box>
+		    <a-entity id="chair1full">
+	    <a-box src="#floor" position="-4.856 0.442 -1.15" scale="0.1 0.9 0.2" color="#806156"></a-box>
+	    <a-box src="#floor" position="-4.03 0.442 -1.15" scale="0.1 0.9 0.2" color="#806156"></a-box>
+	    <a-box src="#floor" position="-4.03 0.442 -1.95" scale="0.1 0.9 0.2" color="#806156"></a-box>
+	    <a-box src="#floor" position="-4.856 0.442 -1.95" scale="0.1 0.9 0.2" color="#806156"></a-box>
 		      <!--chair seat-->
 	    <a-box id="chair1" static-body src="#floor" position="-4.436 0.884 -1.55" scale=".9 0.1 1" color="#806156"></a-box>
 		      <!--chair backrest-->
@@ -128,9 +128,9 @@
 		<!--couch back-->
 		<a-box src="#couch" position="1 1 -7.013009280738309" scale="8 2 0.5" color="30bdff" material="" geometry="" rotation="-20 0 0"></a-box>
 		<!--couch left-->
-		<a-box src="#couch" position="-2.7730185816863213 0.5 -6.4" scale="0.5 1 2" color="30bdff" material="" geometry=""></a-box>
+		<a-box src="#couch" static-body position="-2.7730185816863213 0.5 -6.4" scale="0.5 1 2" color="30bdff" material="" geometry=""></a-box>
 		<!--couch right-->
-		<a-box src="#couch" position="4.75 0.5 -6.4" scale=".5 1 2" color="30bdff" material="" geometry=""></a-box>
+		<a-box src="#couch" static-body position="4.75 0.5 -6.4" scale=".5 1 2" color="30bdff" material="" geometry=""></a-box>
 		 </a-entity>
 		<!--sky-->
 		<a-sky src="#sky"  material="fog: false" geometry=""></a-sky>
