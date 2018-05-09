@@ -28,8 +28,10 @@
 		</a-entity>
 		<a-entity id="poster">
 			<a-box src="#poster" position="-5.19 2.848 4.478" rotation="0 0 10" scale="2 3 0.1"></a-box>
-
-<a-box static-body id="shade1" recieveshadow="true" position="4.724 3.082 -2.978" rotation="0 0 0" scale=".03 0.3 3" color="#ca9785" material="color:#cccec4;normalTextureRepeat:{&quot;x&quot;:2,&quot;y&quot;:2};roughness:0.78;src:;roughnessMap:[object HTMLImageElement];roughnessTextureRepeat:2 8"></a-box>
+			</a-entity>
+			<a-entity id="window shade">
+<a-box position="4.876 3.083 -3" scale="3 0.1 0.5" color="#4A2E11" rotation="0 90 0"></a-box>
+<a-box static-body id="shade1" recieveshadow="true" position="4.724 2.93 -2.978" rotation="0 0 0" scale=".03 0.3 3" color="#ca9785" material="color:#cccec4;normalTextureRepeat:{&quot;x&quot;:2,&quot;y&quot;:2};roughness:0.78;src:;roughnessMap:[object HTMLImageElement];roughnessTextureRepeat:2 8"></a-box>
 <a-box dynamic-body constraint="type:hinge; target:#shade1; targetPivot:0 -0.32 0;" id="shade2" recieveshadow="true" position="4.824 2.8 -2.978" rotation="0 0 0" scale=".03 0.3 3" color="#ca9785" material="color:#cccec4;"></a-box>
 <a-box dynamic-body constraint="type:hinge; target:#shade2; targetPivot:0 -0.32 0;" id="shade3" recieveshadow="true" position="4.824 2.5 -2.978" rotation="0 0 0" scale=".03 0.3 3" color="#ca9785" material="color:#cccec4;"></a-box>
 <a-box dynamic-body constraint="type:hinge; target:#shade3; targetPivot:0 -0.32 0;" id="shade4" recieveshadow="true" position="4.824 2.2 -2.978" rotation="0 0 0" scale=".03 0.3 3" color="#ca9785" material="color:#cccec4;"></a-box>
