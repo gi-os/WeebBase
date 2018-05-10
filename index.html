@@ -30,9 +30,11 @@
 		<!-- Player -->
 		<a-entity id="player" camera height="1.7" universal-controls kinematic-body position="0 1.7 -6" rotation="0 180.00 0">
 		</a-entity>
-		
+		<!-- Book -->
 		<a-box src="#book3" dynamic-body="sphereRadius:NaN;mass:0.3" position="4.678 1.642 1.898" scale="0.5 0.7 0.05" color="30bdff" rotation="0 180 0" quaternion="0.557 0.436 -0.436 0.556" velocity=""></a-box>
+		<!-- Book -->
 		<a-box src="#book4" dynamic-body="sphereRadius:NaN;mass:0.3" position="4.678 1.642 2" scale="0.5 0.7 0.05" color="30bdff" rotation="0 180 0" quaternion="0.557 0.436 -0.436 0.556" velocity=""></a-box>
+		<!-- Book -->
 		<a-box src="#book5" dynamic-body="sphereRadius:NaN;mass:0.3" position="4.678 1.642 2.2" scale="0.5 0.7 0.05" color="30bdff" rotation="0 180 0" quaternion="0.557 0.436 -0.436 0.556" velocity=""></a-box>
 		<!-- stereo -->
 		<!-- left -->
@@ -173,8 +175,28 @@
 		<a-entity id="shelf3">
 			<!--rubix-->
 			<a-box static-body static-body="sphereRadius:NaN" src="#rubix" position="4.577 2.836 -0.14" scale="0.3 0.3 0.3" color="30bdff" rotation="0 30 0"></a-box>
+			<!-- Player -->
+		<a-entity id="player" camera height="1.7" universal-controls kinematic-body position="0 1.7 -6" rotation="0 180.00 0">
+		</a-entity>
+		<!-- Book -->
+		<a-box src="#book3" dynamic-body="sphereRadius:NaN;mass:0.3" position="4.678 1.642 1.898" scale="0.5 0.7 0.05" color="30bdff" rotation="0 180 0" quaternion="0.557 0.436 -0.436 0.556" velocity=""></a-box>
+		<!-- Book -->
+		<a-box src="#book4" dynamic-body="sphereRadius:NaN;mass:0.3" position="4.678 1.642 2" scale="0.5 0.7 0.05" color="30bdff" rotation="0 180 0" quaternion="0.557 0.436 -0.436 0.556" velocity=""></a-box>
+		<!-- Book -->
+		<a-box src="#book5" dynamic-body="sphereRadius:NaN;mass:0.3" position="4.678 1.642 2.2" scale="0.5 0.7 0.05" color="30bdff" rotation="0 180 0" quaternion="0.557 0.436 -0.436 0.556" velocity=""></a-box>
+		<!-- stereo -->
+		<!-- left -->
+		<a-box static-body="sphereRadius:NaN" position="4.677 1.581 -0.14" scale="0.3 0.6 0.3" color="#353535" material="metalness:.86;"></a-box>
+		<a-box static-body="sphereRadius:NaN" src="#couchcube" position="4.503 1.581 -0.14" scale="0.05 0.6 0.3" material="color:#ffffff"></a-box>
+		<!-- right -->
+		<a-box static-body="sphereRadius:NaN" position="4.677 1.581 0.761" scale="0.3 0.6 0.3" color="#353535" material="metalness:.86;"></a-box>
+		<a-box static-body="sphereRadius:NaN" src="#couchcube" position="4.503 1.581 0.761" scale="0.05 0.6 0.3" material="color:#ffffff"></a-box>
+		<!-- main box -->
+		<a-box static-body="sphereRadius:NaN" position="4.577 1.426 0.328" scale="0.2 0.25 0.4" color="#353535"></a-box>
+		<a-box static-body="sphereRadius:NaN" position="4.476 1.324 0.328" scale="0.01 0.05 0.4" color="#353535" material="color:#e7e7e7;metalness:0.45"></a-box>
+		<a-box static-body="sphereRadius:NaN" position="4.476 1.434 0.194" scale="0.05 0.05 0.4" color="#353535" rotation="0 -90 0" material="color:#e7e7e7;metalness:0.45" geometry="primitive:circle"></a-box>
 			<!--shelf3-->
-			<a-box recieveshadow="true" src="#floor" repeat="2 1" roughness=".8" position="4.718 1.2504619688355906 1.397" rotation="0 90 0" scale="4 0.1 0.7" color="#ca9785" material="roughness:0.78;roughnessMap:[object HTMLImageElement];roughnessTextureRepeat:2 8"
+			<a-box static-body recieveshadow="true" src="#floor" repeat="2 1" roughness=".8" position="4.718 1.2504619688355906 1.397" rotation="0 90 0" scale="4 0.1 0.7" color="#ca9785" material="roughness:0.78;roughnessMap:[object HTMLImageElement];roughnessTextureRepeat:2 8"
 			 geometry=""></a-box>
 		</a-entity>
 		<a-entity id="stuff on tvtable">
