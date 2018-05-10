@@ -16,10 +16,14 @@
 		<img id="floor" src="download (2).jpeg" crossorigin="anonymous" preload="auto"></img>
 		<img id="book1" src="diverg.jpeg" preload="auto"></img>
 		<img id="book2" src="www-robinmalau.jpeg" preload="auto"></img>
+		<img id="book3" src="Alchemist.jpg" preload="auto"></img>
+		<img id="book4" src="hobbit.jpg" preload="auto"></img>
+		<img id="book5" src="martian.jpg" preload="auto"></img>
 		<img id="picture" src="IMG_2577.JPG" preload="auto"></img>
 		<img id="poster" src="Screen Shot 2018-05-07 at 10.40.45 PM.png" preload="auto"></img>
 		<img id="couchcube" src="trouser-cloth-texture.jpg" preload="auto"></img>
 		<img id="rubix" src="unnamed.jpg" preload="auto"></img>
+		
 	</a-assets>
 	<a-scene physics>
 
@@ -27,7 +31,9 @@
 		<a-entity id="player" camera height="1.7" universal-controls kinematic-body position="0 1.7 -6" rotation="0 180.00 0">
 		</a-entity>
 		
-		
+		<a-box src="#book3" dynamic-body="sphereRadius:NaN;mass:0.3" position="4.678 1.642 1.898" scale="0.5 0.7 0.05" color="30bdff" rotation="0 180 0" quaternion="0.557 0.436 -0.436 0.556" velocity=""></a-box>
+		<a-box src="#book4" dynamic-body="sphereRadius:NaN;mass:0.3" position="4.678 1.642 2" scale="0.5 0.7 0.05" color="30bdff" rotation="0 180 0" quaternion="0.557 0.436 -0.436 0.556" velocity=""></a-box>
+		<a-box src="#book5" dynamic-body="sphereRadius:NaN;mass:0.3" position="4.678 1.642 2.2" scale="0.5 0.7 0.05" color="30bdff" rotation="0 180 0" quaternion="0.557 0.436 -0.436 0.556" velocity=""></a-box>
 		<!-- stereo -->
 		<!-- left -->
 		<a-box static-body="sphereRadius:NaN" position="4.677 1.581 -0.14" scale="0.3 0.6 0.3" color="#353535" material="metalness:.86;"></a-box>
