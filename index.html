@@ -26,6 +26,17 @@
 		<!-- Player -->
 		<a-entity id="player" camera height="1.7" universal-controls kinematic-body position="0 1.7 -6" rotation="0 180.00 0">
 		</a-entity>
+		
+		
+		<!-- stereo -->
+		<!-- left -->
+		<a-box static-body="sphereRadius:NaN" position="4.677 1.581 -0.14" scale="0.3 0.6 0.3" color="#353535"></a-box>
+		<a-box static-body="sphereRadius:NaN" position="4.503 1.581 -0.14" scale="0.05 0.6 0.3" material="color:#808080"></a-box>
+		<!-- right -->
+		<a-box static-body="sphereRadius:NaN" position="4.677 1.581 0.761" scale="0.3 0.6 0.3" color="#353535"></a-box>
+		<a-box static-body="sphereRadius:NaN" position="4.503 1.581 0.761" scale="0.05 0.6 0.3" material="color:#808080"></a-box>
+		<!-- main box -->
+		<a-box static-body="sphereRadius:NaN" position="4.577 1.444 0.328" scale="0.2 0.3 0.4" color="#353535"></a-box>
 		<a-entity id="poster">
 			<a-box src="#poster" position="-5.19 2.848 4.478" rotation="0 0 10" scale="2 3 0.1"></a-box>
 			</a-entity>
